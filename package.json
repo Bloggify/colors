@@ -1,0 +1,65 @@
+{
+  "name": "colors-app-bloggify",
+  "version": "1.0.0",
+  "description": "Copy—Paste colors from nice palettes.",
+  "main": "bloggify.json",
+  "scripts": {
+    "start": "bloggify-prod-start",
+    "start:dev": "bloggify-dev-start"
+  },
+  "author": "Bloggify <support@bloggify.org> (https://bloggify.org)",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "scripts/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js",
+    "bloggify.js",
+    "bloggify.json",
+    "bloggify/"
+  ],
+  "bugs": {
+    "url": "https://github.com/Bloggify/colors/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bloggify/colors.git"
+  },
+  "homepage": "https://github.com/Bloggify/colors#readme",
+  "blah": {
+    "title": "TODOs",
+    "installation_command": {
+      "content": [
+        "# Clone this repository",
+        "git clone https://github.com/Bloggify/colors",
+        "",
+        "# Install the dependencies",
+        "cd colors && npm i",
+        "",
+        "# Start the app in dev mode",
+        "npm run start:dev"
+      ],
+      "language": "bash"
+    },
+    "h_img": "https://i.imgur.com/5dGCs9s.png"
+  },
+  "dependencies": {
+    "bloggify": "0.0.0-alpha28"
+  },
+  "devDependencies": {
+    "bloggify-cli": "0.0.0-alpha28",
+    "obj2env-cli": "^1.0.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "bloggify-icons": "^1.0.0",
+    "rc-slider": "^8.5.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dd-menu": "^2.0.2"
+  }
+}

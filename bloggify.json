@@ -1,0 +1,8 @@
+{
+  "styles": [
+    "app/assets/css/index.css"
+  ],
+  "scripts": [
+    "app/assets/js/index.js"
+  ]
+}

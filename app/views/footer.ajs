@@ -1,0 +1,3 @@
+        <%- Bloggify.assets.jsHtml() %>
+    </body>
+</html>

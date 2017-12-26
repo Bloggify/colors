@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import "rc-slider/assets/index.css";
+@import "bloggify-icons/lib/bloggify-icons.css";
+
+.row { display: flex; }
+.col{ flex: 1; }
+
+a {
+    color: #5dade2;
+}
+
+.text-center { text-align: center; }
+
+html {
+    &, & body {
+        overflow-x: hidden;
+        position: relative;
+        margin: 0;
+        background: #fbfcfc;
+    }
+    font-family: 'Bungee', cursive;
+}
+
+.slider-wrapper {
+    width: 200px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.color-item {
+    padding: 19px 0;
+    text-align: center;
+    cursor: pointer;
+    &:hover .copy-btn {
+        opacity: 1;
+    }
+    & .copy-btn {
+        opacity: 0;
+        transition: 300ms all ease;
+        padding: 3px 15px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+        color: #fff;
+        display: inline-block;
+    }
+    &.copied {
+        transform: scale(20);
+        transition: 500ms all ease;
+
+    }
+}
+
+h4 {
+    position: absolute;
+    color: white;
+    margin: 3px;
+    opacity: 0.9;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.7em;
+}
+
+.copied-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: red;
+    opacity: 0;
+    pointer-events: none;
+    transition: 400ms all ease;
+    z-index: 9999;
+    & .overlay-content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 70px;
+        color: #fff;
+        text-shadow: 3px 3px 2px black
+    }
+    &.visible {
+        opacity: 1;
+    }
+}
+
+.slider-wrapper {
+    color: #444;
+}
+
+.footer {
+    padding: 20px;
+    color: #444;
+}
+
+.footer-icon {
+    font-size: 2em;
+    color: #444;
+    text-decoration: none;
+    border: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+.emoji-icon {
+    margin-right: 8px;
+    margin-left: 4px;
+}
+
+.btn {
+    background: #FFF;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 4px 20px;
+    user-select: none;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: all .2s;
+    text-align: center;
+    border: none;
+    font-size: 1.1em;
+    font-family: inherit;
+    color: #444;
+    transition: 300ms all ease;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* Dropdown */
+.dd-menu {
+    display: inline-block;
+    position: relative;
+
+    & .dd-menu-items {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        top: 41px;
+        z-index: 99;
+        & ul {
+            list-style: none;
+            padding: 0;
+            & li:first-of-type button {
+                border-radius: 4px 4px 0 0;
+            }
+
+            & li:last-of-type button {
+                border-radius: 0 0 4px 4px;
+                border-bottom: none;
+            }
+
+            & li button {
+                background: white;
+                width: 100%;
+                padding: 6px;
+                border: 0;
+                font-family: inherit;
+                height: 40px;
+                cursor: pointer;
+                user-select: none;
+                border-bottom: 1px solid #ECF0F1;
+                color: #444;
+                font-size: 18px;
+            }
+
+            & li button:hover {
+                background: #3498db;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.rc-slider-handle {
+    border-color: #3498db;
+}
+
+.rc-slider-track {
+    background-color: #3498db;
+}
+
+/* Popup */
+
+* {
+    box-sizing: border-box;
+}
+
+.popup-overlay.about-popup {
+    position: fixed;
+    z-index: 999;
+    background: #ffffff1c;
+    top: 0;
+    right:  0;
+    left: 0;
+    bottom: 0;
+    transition: 300ms opacity ease;
+}
+
+body.popup-opened .app-content {
+    filter: blur(7px);
+    transform: scale(1.2);
+}
+
+
+.popup-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 30px;
+    background: #ffffffb8;
+    border: 1px solid #ffffff29;
+    padding: 50px;
+    border-radius: 4px;
+    box-shadow: 0 5px 40px #ffffff52;
+}
+
+.app-content {
+    transition: 300ms transform ease;
+    transform-origin: 50% 50vh;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+.popup-content img {
+    max-width: 60%;
+}
+
+img {
+    max-width: 100%;
+}

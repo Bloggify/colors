@@ -1,0 +1,3 @@
+<% include(Bloggify.views.header) %>
+<div id="app"></div>
+<% include(Bloggify.views.footer) %>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="csrf-token" content="<%= ctx.csrfToken %>">
+
+	<meta name="keywords" content="material design, copy, paste, palettes, flatui, flat, ui, color, palette">
+	<meta name="description" content="Copy—Paste colors from nice palettes.">
+
+	<meta property="og:title" content="Bloggify Colors—Nice color palettes." />
+	<meta property="og:description" content="Copy—Paste colors from nice palettes." />
+        <meta property="og:url" content="<%= Bloggify.options.domain %>" />
+	<meta property="og:image" content="https://i.imgur.com/5dGCs9s.png" />
+	<meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Bloggify" />
+        <meta name="twitter:creator" content="@Bloggify" />
+
+	<title>Bloggify Colors</title>
+
+	<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+        <link rel="shortcut icon" href="https://bloggify.org/!/bloggify/public/img/logo.png">
+        <%- Bloggify.assets.cssHtml() %>
+    </head>
+    <body>
