@@ -21,7 +21,8 @@ export default class ColorItem extends React.Component {
 
     render () {
         const sty = {
-            backgroundColor: this.props.color
+            backgroundColor: this.props.color,
+            height: this.props.height
         }
         return <CopyToClipboard text={this.props.color} onCopy={this.copied}>
             <div className={"color-item col" + (this.state.copied ? " copied" : "")} style={sty}>
