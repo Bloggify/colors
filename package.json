@@ -5,7 +5,10 @@
   "main": "bloggify.json",
   "scripts": {
     "start": "bloggify-prod-start",
-    "start:dev": "bloggify-dev-start"
+    "start:dev": "bloggify-dev-start",
+    "bundle": "NODE_ENV=production bloggify-start --exit-after-bundle",
+    "build": "rm -rf dist/ ; snap localhost:8080 && mv localhost dist && git add . -A && git commit -m 'Build'",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "author": "Bloggify <support@bloggify.org> (https://bloggify.org)",
   "license": "MIT",
@@ -50,16 +53,18 @@
     "h_img": "https://i.imgur.com/5dGCs9s.png"
   },
   "dependencies": {
-    "bloggify": "0.0.0-alpha28"
+    "bloggify": "0.0.0-alpha29"
   },
   "devDependencies": {
-    "bloggify-cli": "0.0.0-alpha28",
-    "obj2env-cli": "^1.0.4",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "bloggify-cli": "0.0.0-alpha29",
     "bloggify-icons": "^1.0.0",
+    "cute-colors": "^1.0.1",
+    "gh-pages": "^1.1.0",
+    "obj2env-cli": "^1.0.4",
     "rc-slider": "^8.5.0",
+    "react": "^16.2.0",
     "react-copy-to-clipboard": "^5.0.1",
-    "react-dd-menu": "^2.0.2"
+    "react-dd-menu": "^2.0.2",
+    "react-dom": "^16.2.0"
   }
 }
