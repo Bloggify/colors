@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/Bloggify/colors#readme",
   "blah": {
-    "title": "TODOs",
+    "title": "Colors",
     "installation_command": {
       "content": [
         "# Clone this repository",
@@ -50,7 +50,8 @@
       ],
       "language": "bash"
     },
-    "h_img": "https://i.imgur.com/5dGCs9s.png"
+    "h_img": "https://i.imgur.com/5dGCs9s.png",
+    "h_url": "http://colors.bloggify.org"
   },
   "dependencies": {
     "bloggify": "0.0.0-arpha29"
