@@ -47,7 +47,7 @@ html {
     &.copied {
         transform: scale(20);
         transition: 500ms all ease;
-
+        z-index: 9;
     }
 }
 
