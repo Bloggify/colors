@@ -54,7 +54,7 @@
     "h_url": "http://colors.bloggify.org"
   },
   "dependencies": {
-    "bloggify": "0.0.0-arpha29"
+    "bloggify": "0.0.0-alpha29"
   },
   "devDependencies": {
     "bloggify-cli": "0.0.0-alpha29",
