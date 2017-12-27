@@ -53,7 +53,7 @@ html {
     &.copied {
         transform: scale(20);
         transition: 500ms all ease;
-
+        z-index: 9;
     }
 }
 
@@ -241,4 +241,16 @@ h1 {
 
 img {
     max-width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .popup-content {
+        top: 0;
+        margin-top: 0;
+        padding: 10px;
+        bottom: 0;
+        height: 100%;
+        overflow-y: auto;
+    }
 }
