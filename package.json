@@ -1,6 +1,6 @@
 {
   "name": "colors-app-bloggify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Copy—Paste colors from nice palettes.",
   "main": "bloggify.json",
   "scripts": {
